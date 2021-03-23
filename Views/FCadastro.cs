@@ -82,5 +82,25 @@ namespace CRUD.Views
                 limparFormulario();
             }
         }
+
+        private void TxtId_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            //Se a tecla digitada não for número e nem backspace
+            if (!char.IsDigit(e.KeyChar) && (e.KeyChar != 08) && (e.KeyChar != 127))
+            {
+                //Atribui True no Handled para cancelar o evento
+                e.Handled = true;
+            }
+        }
+
+        private void TxtQtdFunc_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            //Se a tecla digitada não for número e nem backspace
+            if (!char.IsDigit(e.KeyChar) && (e.KeyChar != 08) && (e.KeyChar != 127))
+            {
+                //Atribui True no Handled para cancelar o evento
+                e.Handled = true;
+            }
+        }
     }
 }

@@ -100,14 +100,17 @@ namespace CRUD.Views
             // TxtId
             // 
             this.TxtId.Location = new System.Drawing.Point(177, 29);
+            this.TxtId.MaxLength = 9;
             this.TxtId.Name = "TxtId";
             this.TxtId.Size = new System.Drawing.Size(94, 23);
             this.TxtId.TabIndex = 0;
+            this.TxtId.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TxtId_KeyPress);
             this.TxtId.Leave += new System.EventHandler(this.TxtId_Leave);
             // 
             // TxtNome
             // 
             this.TxtNome.Location = new System.Drawing.Point(177, 58);
+            this.TxtNome.MaxLength = 255;
             this.TxtNome.Name = "TxtNome";
             this.TxtNome.Size = new System.Drawing.Size(320, 23);
             this.TxtNome.TabIndex = 1;
@@ -115,6 +118,7 @@ namespace CRUD.Views
             // TxtSite
             // 
             this.TxtSite.Location = new System.Drawing.Point(177, 87);
+            this.TxtSite.MaxLength = 255;
             this.TxtSite.Name = "TxtSite";
             this.TxtSite.Size = new System.Drawing.Size(320, 23);
             this.TxtSite.TabIndex = 2;
@@ -122,9 +126,11 @@ namespace CRUD.Views
             // TxtQtdFunc
             // 
             this.TxtQtdFunc.Location = new System.Drawing.Point(177, 116);
+            this.TxtQtdFunc.MaxLength = 9;
             this.TxtQtdFunc.Name = "TxtQtdFunc";
             this.TxtQtdFunc.Size = new System.Drawing.Size(320, 23);
             this.TxtQtdFunc.TabIndex = 3;
+            this.TxtQtdFunc.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TxtQtdFunc_KeyPress);
             // 
             // FCadastro
             // 
